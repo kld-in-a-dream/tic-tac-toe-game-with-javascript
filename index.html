@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC❌-TAC⭕-TOE❗</title>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <div class="game-board">
+      <div class="row">
+        <div class="cell" data-row="0" data-col="0"></div>
+        <div class="cell" data-row="0" data-col="1"></div>
+        <div class="cell" data-row="0" data-col="2"></div>
+      </div>
+      <div class="row">
+        <div class="cell" data-row="1" data-col="0"></div>
+        <div class="cell" data-row="1" data-col="1"></div>
+        <div class="cell" data-row="1" data-col="2"></div>
+      </div>
+      <div class="row">
+        <div class="cell" data-row="2" data-col="0"></div>
+        <div class="cell" data-row="2" data-col="1"></div>
+        <div class="cell" data-row="2" data-col="2"></div>
+      </div>
+    </div>
+    <button class="my-button" id="refresh-button">Reiniciar</button>
+
+    <script>
+      const refreshButton = document.querySelector('#refresh-button');
+
+      refreshButton.addEventListener('click', () => {
+        location.reload();
+      });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
